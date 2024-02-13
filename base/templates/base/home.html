@@ -1,0 +1,53 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+    <img src="{% static 'images/1x.jpg' %}" alt="Profile Picture" class="profile-img">
+    <h1 class="display-4">Mazen</h1>
+    <p class="lead">Web Developer</p>
+</div>
+
+<!-- About Section -->
+<section id="about" class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About Me</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem
+                euismod, bibendum leo vitae, facilisis metus. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae; Quisque vel urna ac nulla condimentum facilisis.
+                Etiam eu luctus ex. Duis tristique augue sit amet eros congue, vel blandit nisi venenatis.
+                Quisque ultrices hendrerit sagittis.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Me</h2> 
+            <p class="text-muted">Feel free to reach out!</p>
+            <p>Email: {{ your_email }}</p> 
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
